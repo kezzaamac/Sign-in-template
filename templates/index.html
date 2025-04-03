@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Recording System</title>
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .form-group { margin: 10px 0; }
+        input { padding: 5px; width: 200px; }
+        button { padding: 10px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        .records { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Information Recording System</h1>
+    
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+            <label>Age:</label>
+            <input type="number" name="age" required>
+        </div>
+        <div class="form-group">
+            <label>Hobby:</label>
+            <input type="text" name="hobby" required>
+        </div>
+        <div class="form-group">
+            <label>Photo:</label>
+            <input type="file" name="photo" accept="image/*">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    </body>
+</html>
